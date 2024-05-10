@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif; /* Exemplo de fonte */
+    background-color: #f8f8f8; /* Cor de fundo mais clara */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.container {
+    background-color: white;
+    width: 90%;
+    max-width: 500px; 
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    text-align: left; /* Alinhamento do texto à esquerda */
+    max-width: 600px; 
+}
+
+h1 {
+    color: #2c3e50; /* Cor de título mais escura */
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.2rem; /* Aumentar tamanho da fonte */
+    margin-bottom: 5px; /* Ajustar espaçamento */
+    display: block; 
+}
+
+input, 
+button,
+#resultado {
+    margin-bottom: 15px;
+    display: block; 
+    width: 100%;
+}
+
+input, 
+button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e8f0fe; 
+    border-color: #a2d9ff; 
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Efeito hover */
+}
+
+input:focus, 
+button:focus {
+    outline: 2px solid #4CAF50; /* Estilo para foco */
+}
+
+#resultado {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Imagem */
+.container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    /* ... outros ajustes para tablets */
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px; /* Espaçamento menor */
+    }
+    /* ... outros ajustes para celulares */
+}

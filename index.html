@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo de Combustível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Gasto com Combustível</h1>
+    <div class="container">
+        <img src="5637995.jpg" alt="Imagem da Calculadora">
+        <label for="distancia">Distância (km):</label>
+        <input type="number" id="distancia">
+        <label for="consumo">Consumo (km/L):</label>
+        <input type="number" id="consumo">
+        <label for="preco">Preço do Combustível (R$/L):</label>
+        <input type="number" id="preco">
+        <button onclick="calcularGasto()">Calcular</button>
+        <p>Gasto Estimado: <span id="resultado"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
